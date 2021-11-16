@@ -42,6 +42,8 @@ dependencies {
 //  kapt 'com.google.dagger:dagger-compiler:2.40.1'
 }
 
+kapt.correctErrorTypes true
+
 sqldelight {
   MyDatabase {
     packageName = 'com.fredporciuncula.sqldelightdaggerissue.store'
