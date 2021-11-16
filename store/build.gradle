@@ -31,6 +31,7 @@ kotlin {
     androidMain {
       dependencies {
         implementation 'com.google.dagger:hilt-android:2.40.1'
+        configurations['kapt'].dependencies.add(project.dependencies.create('com.google.dagger:hilt-compiler:2.40.1'))
         implementation 'com.squareup.sqldelight:android-driver:1.5.2'
       }
     }
@@ -38,7 +39,7 @@ kotlin {
 }
 
 dependencies {
-  kapt 'com.google.dagger:hilt-compiler:2.40.1'
+//  kapt 'com.google.dagger:hilt-compiler:2.40.1'
 }
 
 sqldelight {
