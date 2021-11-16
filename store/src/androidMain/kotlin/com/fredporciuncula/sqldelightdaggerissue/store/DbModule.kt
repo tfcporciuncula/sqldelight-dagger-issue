@@ -14,7 +14,7 @@ import javax.inject.Singleton
 class DbModule {
 
     @Provides @Singleton
-    fun provideDatabase(@ApplicationContext context: Context): Database {
-        return Database(AndroidSqliteDriver(Database.Schema, context, "test.db"))
+    fun provideDatabase(@ApplicationContext context: Context): MyDatabase {
+        return MyDatabase(AndroidSqliteDriver(MyDatabase.Schema, context, "test.db"))
     }
 }
