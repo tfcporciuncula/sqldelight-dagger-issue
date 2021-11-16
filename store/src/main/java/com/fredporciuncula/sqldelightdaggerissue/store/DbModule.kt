@@ -1,4 +1,4 @@
-package com.fredporciuncula.sqldelightdaggerissue
+package com.fredporciuncula.sqldelightdaggerissue.store
 
 import android.content.Context
 import com.squareup.sqldelight.android.AndroidSqliteDriver
