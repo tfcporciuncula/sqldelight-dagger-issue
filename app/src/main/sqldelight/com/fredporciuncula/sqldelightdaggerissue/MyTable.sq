@@ -1,0 +1,4 @@
+CREATE TABLE mytable (
+  id INTEGER NOT NULL,
+  value TEXT NOT NULL
+);
